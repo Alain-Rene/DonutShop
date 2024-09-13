@@ -1,4 +1,5 @@
 # DonutShop
+This Angular application fetches and displays a list of donut names from an API on the home page. Each donut name links to a details page that shows information such as name, calories, photo, and extras. Users can add donuts to a cart, stored in memory, and the cart page displays all added donuts with a total price and calorie count.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
 
