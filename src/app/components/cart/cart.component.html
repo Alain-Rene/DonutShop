@@ -1,0 +1,23 @@
+<body>
+<h2>Shopping Cart</h2>
+
+<div> 
+    @if(cartItems.length === 0){
+        <p>Your cart is empty!</p>
+    }
+    @else {
+        <ul>
+            
+                @for (i of cartItems; track $index) {
+                    <li>
+                    <p>{{i.donut.name}} - ${{i.price}}</p>
+                    </li>
+                }
+            
+          </ul>
+        <p>Total Calories: {{totalCalories}}</p>
+        <p>Total Cost: ${{ totalCost }}</p>
+        <button (click)="buy()">Purchase</button>
+    }
+</div>
+</body>

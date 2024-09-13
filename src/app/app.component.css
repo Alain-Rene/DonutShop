@@ -1,0 +1,14 @@
+ body {
+    height: 100%;
+    background-color: #fff5e1; 
+}
+
+div {
+    justify-content: space-between;
+    padding: 10px 20px; 
+}
+
+.links {
+    font-size: 18px;
+    margin-right: 20px;
+}

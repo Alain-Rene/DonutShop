@@ -1,0 +1,17 @@
+<body>
+<h1>{{donutResult.name}}</h1>
+<button (click)="addToCart()">Add to Cart</button>
+
+<p>Calories: {{donutResult.calories}}</p>
+
+<p>Extras:</p>
+<ul>
+    @for (i of donutResult.extras; track $index){
+        <li>
+            <p>{{i}}</p>
+        </li>
+    }
+</ul>
+<img [src]="donutResult.photo" class="donutImage">
+<p>Photo attribution: <a [href]="donutResult.photo_attribution" target="_blank">Click here!</a></p>
+</body>
